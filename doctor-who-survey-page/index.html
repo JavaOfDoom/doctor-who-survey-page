@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doctor Who Survey Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Doctor Who Survey</h1>
+<div>
+  <p id="description">
+    Fill out this survey form to let us know how much you love Doctor Who and if you would like to recieve updates about our Doctor Who Tribute page.
+  </p>
+  <form id="survey-form">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="number">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="120" class="input-field" required placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender">Gender: </label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="gender" class="dropdown">
+        <option disabled value>Select and option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="xOther">X (other)</option>
+        <option value="preferNot">Prefer not to say</option>
+        </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="favoriteDoctor">Who is your favorite Doctor?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>William Hartnell (1st)<input name="radio-buttons" value="1" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Patrick Troughton (2nd)<input name="radio-buttons" value="2" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Jon Pertwee (3rd)<input name="radio-buttons" value="3" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Tom Baker (4th)<input name="radio-buttons" value="4" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Peter Davidson (5th)<input name="radio-buttons" value="5" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Colin Baker (6th)<input name="radio-buttons" value="6" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Sylvester McCoy (7th)<input name="radio-buttons" value="7" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Paul McGann (8th)<input name="radio-buttons" value="8" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>John Hurt (The War Doctor)<input name="radio-buttons" value="9" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Christopher Eccleston (9th)<input name="radio-buttons" value="10" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>David Tennant (10th)<input name="radio-buttons" value="11" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Matt Smith (11th)<input name="radio-buttons" value="12" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Peter Capaldi (12th)<input name="radio-buttons" value="13" type="radio" class="favoriteDoctor"></label></li>
+          <li class="radio"><label>Jodie Whittaker (13th)<input name="radio-buttons" value="14" type="radio" class="favoriteDoctor"></label></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="updates">Things I would like to recieve e-mail updates about<br>(Check all that apply): </label>
+    </div>
+    <div class="rightTab">
+      <ul id="updates" style="list-style: none;">
+        <li class="checkbox"><label><input name="update" value="1" type="checkbox" class="optionalUpdates">Upcoming episodes</label></li>
+        <li class="checkbox"><label><input name="update" value="2" type="checkbox" class="optionalUpdates">Fun Facts!</label></li>
+        <li class="checkbox"><label><input name="update" value="3" type="checkbox" class="optionalUpdates">Cast changes</label></li>
+        <li class="checkbox"><label><input name="update" value="4" type="checkbox" class="optionalUpdates">Breaking news</label></li>
+        <li class="checkbox"><label><input name="update" value="5" type="checkbox" class="optionalUpdates">Books</label></li>
+        <li class="checkbox"><label><input name="update" value="6" type="checkbox" class="optionalUpdates">Comics</label></li>
+        <li class="checkbox"><lable><input name="update" value="7" type="checkbox" class="optionalUpdates">Audiobooks</label></li>
+      </ul>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="comments">Any comments, suggestions, or questions?</label>
+    </div>
+    <div class="rightTab">
+      <textarea id="comments" class="input-field" style="height:80px;resize:verticle;" name="comment" placeholder="Enter comments, suggestions, or questions here..."></textarea>
+    </div>
+  </div>
+  <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
